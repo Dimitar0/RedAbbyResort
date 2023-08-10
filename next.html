@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Next.css">
+        <title>Reserving a Room at Red abbey Resort</title>
+</head>
+<body>
+    <h1>Reserving a Room at Red abbey Resort</h1>
+    <h2>Rooms and Prices</h2>
+    <table>
+        <th scope="col">Room type</th>
+        <th scope="col">maximum Occipancy</th>
+        <th scope="col">Average Price per Night</th>
+        <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Guests Rooms</tt>
+        <tr>
+            <td>attic Room</td>
+            <td>1</td>
+            <td>100$</td>
+        </tr>
+        <tr>
+            <td>Standard Room</td>
+            <td>2</td>
+            <td>170$</td>
+        </tr>
+        <tr>
+            <td>Garden View Suite</td>
+            <td>4</td>
+            <td>220$</td>
+        </tr>
+    </table>
+    <h2>Submit a Reservation Request</h2>
+    <form action="https://httpbin.org/get" method="get">
+     
+       <p>
+       <label for="FirstName">FirstName</label>
+       <input type="text" name="FirstName" id="FirstName" placeholder="Jonh"
+       autocomplete="on" required autofocus>
+       </p>
+       <p>
+       <label for="lastName">lastName</label>
+       <input type="text" name="lastName" id="lastName" placeholder="Wick"
+        required >
+       </p>
+       <p>
+        <label for="Phone Number">Phone Number</label>
+       <input type="number" name="Phone Number" id="Phone number" placehold=""
+      required >
+       </p>
+       <p>
+        <label for="email">Email</label>
+       <input type="email" name="email" id="email" placeholder="example@yahoo.com" required>
+       </p>
+       <fieldset>
+        <legend> Choose room type</legend>
+    <input type="radio"  id="attic" name="Rooms"/><label for="attic" >Attic Room</label>
+         <input type="radio" id="standard" name="Rooms" /><label for="standard" > Standard room</label>
+    <input type="radio" id="garden" name="Rooms"/><label for="garden" >Garden View Suite</label>
+</fieldset>
+<br>
+
+
+<strong>Check in</strong><input type="date">
+<br>
+<br>
+<strong>Check out</strong><input type="date">
+<div>comment</div>
+<textarea rows="10" cols="50"></textarea>
+<br>
+<button>submit request</button>
+<br>
+<br>
+<small>reservations must be made <em>at least</em>30 days in advance</small>
+<br>
+<br>
+<a href="RedAbbyResort.html">Return to home page</a>
+</body>
+</html>
